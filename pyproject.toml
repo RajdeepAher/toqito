@@ -1,3 +1,20 @@
+[tool.isort]
+py_version = 311
+skip = [".gitignore", "**__init__.py"]
+skip_glob = ["docs/*", ".github/*"]
+line_length = 120
+multi_line_output = 3
+use_parentheses = true
+order_by_type = true
+lines_between_types = 1
+include_trailing_comma = true
+split_on_trailing_comma = true
+group_by_package = true
+#color_output = true
+# if needed to figure out why some file was skipped use 
+# verbose = true
+
+
 [tool.poetry]
 name = "toqito"
 version = "1.1.1"
@@ -36,6 +53,7 @@ myst-parser = "4.0.1"
 pep8 = "1.7.1"
 ruff = "0.9.9"
 mypy = "1.15.0"
+colorama = "0.4.6"
 
 [tool.poetry.group.docs.dependencies]
 readthedocs-sphinx-ext = "*"
@@ -53,6 +71,8 @@ build-backend = "poetry.masonry.api"
 # exclude = ["__init__.py"]
 line-length = 120
 target-version = "py311"
+#force-exclude = true
+#output-format = "full" 
 
 [tool.ruff.lint]
 select = ["I", "E", "W", "D", "PL"]
