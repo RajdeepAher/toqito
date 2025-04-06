@@ -47,6 +47,15 @@ User Documentation
     code_of_conduct
 
 
+Examples Gallery
+----------------
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Gallery of Examples
+
+   auto_examples/index
+
 API Reference
 -------------
 

@@ -44,6 +44,7 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinxcontrib.bibtex",
     "sphinx_copybutton",
+    "sphinx_gallery.gen_gallery",
 ]
 
 bibtex_bibfiles = ["refs.bib"]
@@ -102,7 +103,14 @@ templates_path = ["_templates"]
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "_templates", "Thumbs.db", ".DS_Store"]
 
-
+sphinx_gallery_conf = {
+    # Path to your example scripts
+    "examples_dirs": "../examples",
+    # Path where to save gallery generated output
+    "gallery_dirs": "auto_examples",
+    # Pattern to include files
+    "filename_pattern": r"\.py",
+}
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -115,7 +123,7 @@ html_favicon = "figures/favicon.ico"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-# html_static_path = ["_static"]
+html_static_path = ["_static"]
 # html_css_files = ["custom.css"]
 
 # Show in footer when the docs were last updated.
