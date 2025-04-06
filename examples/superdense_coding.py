@@ -1,6 +1,5 @@
-r"""Demonstration of the Superdense Coding protocol.
+r"""Superdense Coding.
 
-Superdense Coding
 ==================
 
 In classical communication, sending two bits of information requires transmitting
@@ -128,6 +127,7 @@ References
    :filter: docname in docnames
 
 """
+
 # sphinx_gallery_thumbnail_path = '_static/thumbnails/superdense_coding.png'
 
 import numpy as np
